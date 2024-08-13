@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="custPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFA836;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.hibernate.controller.CustomerController">
+   <children>
+      <ImageView fitHeight="196.0" fitWidth="514.0" layoutX="46.0" layoutY="134.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/images%20(8).jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="199.0" layoutY="14.0" prefHeight="41.0" prefWidth="203.0" text="CUSTOMER MANAGE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="92.0" prefHeight="17.0" prefWidth="102.0" text="Customer Id  :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="151.0" prefHeight="17.0" prefWidth="102.0" text="Customer Name  :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="213.0" prefHeight="17.0" prefWidth="102.0" text="Mobile Number  :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnAdd" layoutX="40.0" layoutY="345.0" mnemonicParsing="false" onAction="#btnAddOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Add" textFill="#fffefe" />
+      <Button fx:id="update" layoutX="91.0" layoutY="345.0" mnemonicParsing="false" onAction="#updateOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Update" textFill="#fffbfb" />
+      <Button fx:id="delete" layoutX="158.0" layoutY="345.0" mnemonicParsing="false" onAction="#deleteOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Delete" textFill="WHITE" />
+      <TextField fx:id="custId" layoutX="165.0" layoutY="88.0" opacity="0.5" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5;" />
+      <TextField fx:id="custName" layoutX="165.0" layoutY="147.0" opacity="0.5" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5;" />
+      <TextField fx:id="MobileNum" layoutX="165.0" layoutY="209.0" opacity="0.5" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: white; -fx-background-radius: 5; -fx-border-radius: 5;" />
+      <Line endX="84.0" layoutX="308.0" layoutY="55.0" startX="-100.0" />
+      <Button fx:id="back" layoutX="253.0" layoutY="345.0" mnemonicParsing="false" onAction="#backOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

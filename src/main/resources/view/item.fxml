@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="itemPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: FFA836;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.thogakade.hibernate.controller.ItemController">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="288.0" layoutX="353.0" layoutY="99.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@image/download%20(11).jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="218.0" layoutY="14.0" prefHeight="41.0" prefWidth="168.0" text="ITEM MANAGE">
+         <font>
+            <Font name="Bell MT Bold" size="18.0" />
+         </font>
+      </Label>
+      <Line endX="33.0" layoutX="319.0" layoutY="54.0" startX="-100.0" />
+      <Label layoutX="29.0" layoutY="91.0" text="Item Id  :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="134.0" text="Item Name    :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="183.0" prefHeight="17.0" prefWidth="51.0" text="Price  :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="232.0" text="Qty  :">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtItemId" layoutX="144.0" layoutY="87.0" opacity="0.5" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <TextField fx:id="txtQty" layoutX="144.0" layoutY="228.0" opacity="0.5" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <TextField fx:id="txtPrice" layoutX="144.0" layoutY="179.0" opacity="0.5" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <TextField fx:id="txtItemName" layoutX="144.0" layoutY="130.0" opacity="0.5" prefHeight="25.0" prefWidth="168.0" style="-fx-background-color: white; -fx-border-radius: 5; -fx-background-radius: 5;" />
+      <Button fx:id="btnAdd" layoutX="40.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnAddOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Add" textFill="#fffefe" />
+      <Button fx:id="btnUpdate" layoutX="90.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Update" textFill="#fffefe" />
+      <Button fx:id="btnDelete" layoutX="157.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Delete" textFill="#fffefe" />
+      <Button fx:id="btnBack" layoutX="248.0" layoutY="293.0" mnemonicParsing="false" onAction="#btnBackOnAction" style="-fx-background-color: black; -fx-background-radius: 10; -fx-border-radius: 10;" text="Back" textFill="#fffefe" />
+   </children>
+</AnchorPane>
